@@ -1,0 +1,18 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "fabslap-scavangerhunt",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-09-01",
+  "observability": { "enabled": true },
+  "routes": [
+    { "pattern": "fabslap.fun", "custom_domain": true }
+  ],
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "fabslap-scavangerhunt-db",
+      "database_id": "1798dc70-0db3-4cdf-9587-8c7c0c030330",
+      "migrations_dir": "migrations"
+    }
+  ]
+}
